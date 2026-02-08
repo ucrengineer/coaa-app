@@ -1,0 +1,177 @@
+{
+  "flashcards": [
+    {
+      "activity": "1.13.1: First electronic computers",
+      "cards": [
+        {
+          "question": "What is the abbreviation for what is considered the world's first operational electronic, general-purpose computer?",
+          "answer": "ENIAC",
+          "details": "Electronic Numerical Integrator and Calculator, developed by Eckert and Mauchly.",
+          "tags": ["History", "Hardware"]
+        },
+        {
+          "question": "The ENIAC was developed in the 1940s at the University of ________.",
+          "answer": "Pennsylvania",
+          "details": "Funded by the U.S. Army for computing artillery-firing tables during WWII.",
+          "tags": ["History"]
+        },
+        {
+          "question": "A team including Alan Turing built Colossus to decrypt ________ messages during World War II.",
+          "answer": "German",
+          "details": "Decrypting these messages is estimated to have reduced the war by two years.",
+          "tags": ["History", "Security"]
+        },
+        {
+          "question": "A computer using separate memories for instructions and data is known as a ________ architecture.",
+          "answer": "Harvard",
+          "details": "Named after the Mark-III and Mark-IV computers developed at Harvard.",
+          "tags": ["Architecture"]
+        }
+      ]
+    },
+    {
+      "activity": "1.13.2: Commercial development of computers",
+      "cards": [
+        {
+          "term": "IBM System/360",
+          "definition": "Product line of computers with varying cost and performance.",
+          "details": "Varying cost from $225k-$1.9M and clock rates of 1.6 MHz to 5.1MHz.",
+          "tags": ["Commercial", "Hardware"]
+        },
+        {
+          "term": "PDP-8",
+          "definition": "Minicomputer",
+          "details": "Smaller and cheaper than counterparts; cost $20,000 in 1965.",
+          "tags": ["Commercial", "Hardware"]
+        },
+        {
+          "term": "Cray-1",
+          "definition": "Supercomputer",
+          "details": "The fastest and most expensive computer in 1976, costing $4,000,000.",
+          "tags": ["Commercial", "Hardware", "Performance"]
+        },
+        {
+          "term": "Intel 4004",
+          "definition": "Microprocessor",
+          "details": "Introduced in 1971, it was the first CPU integrated into a single integrated circuit (IC).",
+          "tags": ["Hardware", "Innovation"]
+        }
+      ]
+    },
+    {
+      "activity": "1.13.3: Personal computers",
+      "cards": [
+        {
+          "question": "In the 1980s, the ________ was the most popular personal computer.",
+          "answer": "IBM Personal Computer",
+          "details": "Its popularity led to the dominance of Microsoft's operating systems.",
+          "tags": ["Commercial", "History"]
+        },
+        {
+          "question": "True/False: The first personal computers did not come with a pointing device, such as a mouse.",
+          "answer": "True",
+          "details": "Early computers were text-based; the Xerox Alto was an early influencer of GUI and mouse use.",
+          "tags": ["Hardware", "UX"]
+        },
+        {
+          "question": "What was the only nonvolatile storage in the first personal computers?",
+          "answer": "Floppy drives",
+          "details": "Used to retain programs and data when power was removed.",
+          "tags": ["Hardware", "Storage"]
+        }
+      ]
+    },
+    {
+      "activity": "1.13.4: Evaluating performance",
+      "cards": [
+        {
+          "question": "True/False: Comparing the time required to perform an add instruction is a reliable method to evaluate performance between computers.",
+          "answer": "False",
+          "details": "Execution times became too varied; standard benchmarks using sets of applications are now used.",
+          "tags": ["Performance", "Theory"]
+        },
+        {
+          "question": "If Computer A runs 10 Whetstones/sec and Computer B runs 12 Whetstones/sec, which is faster?",
+          "answer": "Computer B",
+          "details": "Higher iterations per second indicates a faster computer.",
+          "tags": ["Performance", "Benchmarks"]
+        },
+        {
+          "question": "True/False: The SPEC benchmarks change as computers evolve.",
+          "answer": "True",
+          "details": "SPEC2017 is the most recent version; programs like the gcc compiler remain included from earlier versions.",
+          "tags": ["Performance", "Benchmarks"]
+        }
+      ]
+    },
+    {
+      "activity": "2.24.1: Evolution of computer architectures",
+      "cards": [
+        {
+          "term": "RISC architecture",
+          "definition": "Reduced instruction set computer architecture",
+          "details": "Relies on small, simple instructions. Most current instruction sets employ this model.",
+          "tags": ["Architecture", "Theory"]
+        },
+        {
+          "term": "Load-store architecture",
+          "definition": "Register-register architecture",
+          "details": "Restricts all operands to be in registers. Used by MIPS and ARM.",
+          "tags": ["Architecture"]
+        },
+        {
+          "term": "Accumulator architecture",
+          "definition": "Single register architecture",
+          "details": "Earliest computers used one register (the accumulator) for all arithmetic operations.",
+          "tags": ["Architecture", "History"]
+        },
+        {
+          "term": "Stack architecture",
+          "definition": "No registers architecture",
+          "details": "Operands are transferred onto and off of a stack; common in 1960s HP calculators.",
+          "tags": ["Architecture"]
+        }
+      ]
+    },
+    {
+      "activity": "2.24.3: History of programming languages",
+      "cards": [
+        {
+          "question": "Developed for use in business settings, ________ employs English vocabulary and punctuation.",
+          "answer": "Cobol",
+          "details": "Short for COmmon Business-Oriented Language.",
+          "tags": ["Software", "Languages"]
+        },
+        {
+          "question": "In the 1970s, Bell Labs built the UNIX operating system using the ________ language.",
+          "answer": "C",
+          "details": "C's popularity grew with UNIX and influenced languages like C++.",
+          "tags": ["Software", "Languages", "History"]
+        },
+        {
+          "question": "________ is currently the most popular language to teach in schools and standard for business data processing.",
+          "answer": "Java",
+          "details": "Initially called Oak; features an improved object-oriented design compared to C++.",
+          "tags": ["Software", "Languages"]
+        }
+      ]
+    },
+    {
+      "activity": "3.11.1: Floating-point",
+      "cards": [
+        {
+          "question": "True/False: Floating-point hardware was included in the first computers.",
+          "answer": "False",
+          "details": "John von Neumann refused to include it due to increased complexity and memory loss.",
+          "tags": ["Hardware", "Architecture", "History"]
+        },
+        {
+          "question": "True/False: Floating-point hardware became standardized by the late 1950s.",
+          "answer": "False",
+          "details": "Each implementation was different, leading to inconsistent results across different computers.",
+          "tags": ["Hardware", "Standards"]
+        }
+      ]
+    }
+  ]
+}
