@@ -38,6 +38,15 @@ All exams are held in **Room 60-113**.
 | **Midterm Exam #2** | April 17, 2026 | 2:00 - 3:00 PM |
 | **Midterm Exam #3** | May 22, 2026 | 2:00 - 3:00 PM |
 | **Final Exam** | May 29, 2026 | 2:00 - 4:00 PM |
+---
+
+## 📢 Sharing & Academic Integrity
+This app is intended as a collaborative study resource for students enrolled in MATH 230 at Southwestern College. You may share this repository with classmates for educational purposes only. Do **not** submit any part of this app as your own coursework, homework, or exam answers. Always follow your instructor's guidelines and the school's academic integrity policy.
+
+**Disclaimer:** This project is not officially endorsed by Southwestern College or Instructor Denis O Nuñez. Use responsibly and cite sources as required.
+
+## 📄 License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
