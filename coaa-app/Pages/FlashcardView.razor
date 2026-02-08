@@ -45,6 +45,11 @@
 
     private bool showAnswer = false;
 
+    protected override void OnParametersSet()
+    {
+        showAnswer = false;
+    }
+
     private void ToggleShowAnswer()
     {
         showAnswer = !showAnswer;
