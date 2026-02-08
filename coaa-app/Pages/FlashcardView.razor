@@ -1,0 +1,52 @@
+@using coaa_app.Data
+
+<div class="flashcard mb-3 p-3 border rounded" style="max-width: 400px;">
+    @if (!string.IsNullOrEmpty(Card.Term))
+    {
+        <div>
+            <strong>Term:</strong> @Card.Term
+        </div>
+        <div>
+            <strong>Definition:</strong> @Card.Definition
+        </div>
+    }
+    else
+    {
+        <div>
+            <strong>Question:</strong> @Card.Question
+        </div>
+        <div>
+            <button class="btn btn-primary btn-sm mt-2" @onclick="ToggleShowAnswer">Show Answer</button>
+            @if (showAnswer)
+            {
+                <div class="mt-2">
+                    <strong>Answer:</strong> @Card.Answer
+                </div>
+            }
+        </div>
+    }
+    <div class="mt-2 text-muted" style="font-size:small;">
+        @Card.Details
+    </div>
+    <div class="mt-1">
+        @if (Card.Tags != null)
+        {
+            @foreach (var tag in Card.Tags)
+            {
+                <span class="badge bg-secondary me-1" style="font-size:small;">@tag</span>
+            }
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public FlashcardJsonItem Card { get; set; }
+
+    private bool showAnswer = false;
+
+    private void ToggleShowAnswer()
+    {
+        showAnswer = !showAnswer;
+    }
+}

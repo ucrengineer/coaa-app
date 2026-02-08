@@ -1,0 +1,53 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# Build results
+out/
+
+# NuGet
+*.nupkg
+# Packages
+packages/
+# Package directories
+**/packages/*
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# WebAssembly
+wwwroot/dist/
+
+# Rider
+.idea/
+
+# Other
+*.swp
+*.bak
+*.tmp
+
+# Ignore secrets
+secrets.json
+
+# Ignore publish output
+publish/
+
+# Ignore test results
+TestResults/
+
+# Ignore coverage reports
+coverage/
+
+# Ignore node_modules (if using JS tooling)
+node_modules/

@@ -1,0 +1,86 @@
+@page "/study"
+@using coaa_app.Data
+@inject coaa_app.Services.FlashcardService FlashcardService
+
+<div class="d-flex flex-column align-items-center mt-4">
+    <h2 class="fw-bold text-primary mb-3">Week 1 Study</h2>
+
+    @if (allCards == null)
+    {
+        <div>Loading...</div>
+    }
+    else if (allCards.Count == 0)
+    {
+        <div>No flashcards found.</div>
+    }
+    else
+    {
+        <div class="mb-2 text-center">
+            <span class="badge bg-info text-dark fs-6">@CurrentActivityName</span>
+        </div>
+        <div class="mb-2">
+            <span class="fw-bold">Card @(CurrentCardIndex + 1) of @TotalCards</span>
+        </div>
+        <div class="flashcard-anim mb-4">
+            <FlashcardView Card="CurrentCard" />
+        </div>
+        <div class="d-flex justify-content-center gap-3 mt-2">
+            <button class="btn btn-outline-secondary btn-lg" @onclick="PreviousCard" disabled="@(CurrentCardIndex == 0)">
+                <i class="bi bi-arrow-left-circle"></i> Previous
+            </button>
+            <button class="btn btn-outline-success btn-lg" @onclick="NextCard" disabled="@(CurrentCardIndex == TotalCards - 1)">
+                Next <i class="bi bi-arrow-right-circle"></i>
+            </button>
+        </div>
+    }
+</div>
+
+<style>
+    .flashcard-anim {
+        transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55), box-shadow 0.3s;
+        transform: scale(1.03);
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .flashcard-anim:active {
+        transform: scale(0.98);
+    }
+</style>
+
+@code {
+    private List<(FlashcardJsonItem Card, string ActivityName)> allCards;
+    private int CurrentCardIndex = 0;
+
+    private FlashcardJsonItem CurrentCard => allCards?[CurrentCardIndex].Card;
+    private string CurrentActivityName => allCards?[CurrentCardIndex].ActivityName;
+    private int TotalCards => allCards?.Count ?? 0;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var data = await FlashcardService.GetWeek1Async();
+        allCards = new();
+        foreach (var activity in data.Flashcards)
+        {
+            foreach (var card in activity.Cards)
+            {
+                allCards.Add((card, activity.Activity));
+            }
+        }
+        CurrentCardIndex = 0;
+    }
+
+    private void NextCard()
+    {
+        if (CurrentCardIndex < TotalCards - 1)
+        {
+            CurrentCardIndex++;
+        }
+    }
+
+    private void PreviousCard()
+    {
+        if (CurrentCardIndex > 0)
+        {
+            CurrentCardIndex--;
+        }
+    }
+}
