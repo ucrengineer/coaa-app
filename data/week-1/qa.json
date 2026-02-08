@@ -7,25 +7,25 @@
           "question": "What is the abbreviation for what is considered the world's first operational electronic, general-purpose computer?",
           "answer": "ENIAC",
           "details": "Electronic Numerical Integrator and Calculator, developed by Eckert and Mauchly.",
-          "tags": ["History", "Hardware"]
+          "tags": [ "History", "Hardware" ]
         },
         {
           "question": "The ENIAC was developed in the 1940s at the University of ________.",
           "answer": "Pennsylvania",
           "details": "Funded by the U.S. Army for computing artillery-firing tables during WWII.",
-          "tags": ["History"]
+          "tags": [ "History" ]
         },
         {
           "question": "A team including Alan Turing built Colossus to decrypt ________ messages during World War II.",
           "answer": "German",
           "details": "Decrypting these messages is estimated to have reduced the war by two years.",
-          "tags": ["History", "Security"]
+          "tags": [ "History", "Security" ]
         },
         {
           "question": "A computer using separate memories for instructions and data is known as a ________ architecture.",
           "answer": "Harvard",
           "details": "Named after the Mark-III and Mark-IV computers developed at Harvard.",
-          "tags": ["Architecture"]
+          "tags": [ "Architecture" ]
         }
       ]
     },
@@ -36,25 +36,25 @@
           "term": "IBM System/360",
           "definition": "Product line of computers with varying cost and performance.",
           "details": "Varying cost from $225k-$1.9M and clock rates of 1.6 MHz to 5.1MHz.",
-          "tags": ["Commercial", "Hardware"]
+          "tags": [ "Commercial", "Hardware" ]
         },
         {
           "term": "PDP-8",
           "definition": "Minicomputer",
           "details": "Smaller and cheaper than counterparts; cost $20,000 in 1965.",
-          "tags": ["Commercial", "Hardware"]
+          "tags": [ "Commercial", "Hardware" ]
         },
         {
           "term": "Cray-1",
           "definition": "Supercomputer",
           "details": "The fastest and most expensive computer in 1976, costing $4,000,000.",
-          "tags": ["Commercial", "Hardware", "Performance"]
+          "tags": [ "Commercial", "Hardware", "Performance" ]
         },
         {
           "term": "Intel 4004",
           "definition": "Microprocessor",
           "details": "Introduced in 1971, it was the first CPU integrated into a single integrated circuit (IC).",
-          "tags": ["Hardware", "Innovation"]
+          "tags": [ "Hardware", "Innovation" ]
         }
       ]
     },
@@ -65,19 +65,19 @@
           "question": "In the 1980s, the ________ was the most popular personal computer.",
           "answer": "IBM Personal Computer",
           "details": "Its popularity led to the dominance of Microsoft's operating systems.",
-          "tags": ["Commercial", "History"]
+          "tags": [ "Commercial", "History" ]
         },
         {
           "question": "True/False: The first personal computers did not come with a pointing device, such as a mouse.",
           "answer": "True",
           "details": "Early computers were text-based; the Xerox Alto was an early influencer of GUI and mouse use.",
-          "tags": ["Hardware", "UX"]
+          "tags": [ "Hardware", "UX" ]
         },
         {
           "question": "What was the only nonvolatile storage in the first personal computers?",
           "answer": "Floppy drives",
           "details": "Used to retain programs and data when power was removed.",
-          "tags": ["Hardware", "Storage"]
+          "tags": [ "Hardware", "Storage" ]
         }
       ]
     },
@@ -88,19 +88,19 @@
           "question": "True/False: Comparing the time required to perform an add instruction is a reliable method to evaluate performance between computers.",
           "answer": "False",
           "details": "Execution times became too varied; standard benchmarks using sets of applications are now used.",
-          "tags": ["Performance", "Theory"]
+          "tags": [ "Performance", "Theory" ]
         },
         {
           "question": "If Computer A runs 10 Whetstones/sec and Computer B runs 12 Whetstones/sec, which is faster?",
           "answer": "Computer B",
           "details": "Higher iterations per second indicates a faster computer.",
-          "tags": ["Performance", "Benchmarks"]
+          "tags": [ "Performance", "Benchmarks" ]
         },
         {
           "question": "True/False: The SPEC benchmarks change as computers evolve.",
           "answer": "True",
           "details": "SPEC2017 is the most recent version; programs like the gcc compiler remain included from earlier versions.",
-          "tags": ["Performance", "Benchmarks"]
+          "tags": [ "Performance", "Benchmarks" ]
         }
       ]
     },
@@ -111,25 +111,25 @@
           "term": "RISC architecture",
           "definition": "Reduced instruction set computer architecture",
           "details": "Relies on small, simple instructions. Most current instruction sets employ this model.",
-          "tags": ["Architecture", "Theory"]
+          "tags": [ "Architecture", "Theory" ]
         },
         {
           "term": "Load-store architecture",
           "definition": "Register-register architecture",
           "details": "Restricts all operands to be in registers. Used by MIPS and ARM.",
-          "tags": ["Architecture"]
+          "tags": [ "Architecture" ]
         },
         {
           "term": "Accumulator architecture",
           "definition": "Single register architecture",
           "details": "Earliest computers used one register (the accumulator) for all arithmetic operations.",
-          "tags": ["Architecture", "History"]
+          "tags": [ "Architecture", "History" ]
         },
         {
           "term": "Stack architecture",
           "definition": "No registers architecture",
           "details": "Operands are transferred onto and off of a stack; common in 1960s HP calculators.",
-          "tags": ["Architecture"]
+          "tags": [ "Architecture" ]
         }
       ]
     },
@@ -140,19 +140,19 @@
           "question": "Developed for use in business settings, ________ employs English vocabulary and punctuation.",
           "answer": "Cobol",
           "details": "Short for COmmon Business-Oriented Language.",
-          "tags": ["Software", "Languages"]
+          "tags": [ "Software", "Languages" ]
         },
         {
           "question": "In the 1970s, Bell Labs built the UNIX operating system using the ________ language.",
           "answer": "C",
           "details": "C's popularity grew with UNIX and influenced languages like C++.",
-          "tags": ["Software", "Languages", "History"]
+          "tags": [ "Software", "Languages", "History" ]
         },
         {
           "question": "________ is currently the most popular language to teach in schools and standard for business data processing.",
           "answer": "Java",
           "details": "Initially called Oak; features an improved object-oriented design compared to C++.",
-          "tags": ["Software", "Languages"]
+          "tags": [ "Software", "Languages" ]
         }
       ]
     },
@@ -163,13 +163,309 @@
           "question": "True/False: Floating-point hardware was included in the first computers.",
           "answer": "False",
           "details": "John von Neumann refused to include it due to increased complexity and memory loss.",
-          "tags": ["Hardware", "Architecture", "History"]
+          "tags": [ "Hardware", "Architecture", "History" ]
         },
         {
           "question": "True/False: Floating-point hardware became standardized by the late 1950s.",
           "answer": "False",
           "details": "Each implementation was different, leading to inconsistent results across different computers.",
-          "tags": ["Hardware", "Standards"]
+          "tags": [ "Hardware", "Standards" ]
+        }
+      ]
+    },
+    {
+      "activity": "3.11.2: Floating-point: User-side challenges",
+      "cards": [
+        {
+          "question": "True/False: In an effort to achieve similar floating-point accuracy, programmers converting code from the IBM 7094 to the S/360 replaced single precision declarations with double precision declarations.",
+          "answer": "True",
+          "details": "The IBM S/360's larger memory and narrower single precision words produced inaccurate results compared to the IBM 7094.",
+          "tags": [ "Hardware", "Floating-Point" ]
+        },
+        {
+          "question": "True/False: Reduced floating-point accuracy and the high cost of converting code lead to the formation of a subcommittee of IBM mainframe users to propose improvements.",
+          "answer": "True",
+          "details": "IBM eventually updated the System/360 floating point based on these recommendations.",
+          "tags": [ "Standards", "History" ]
+        },
+        {
+          "question": "True/False: On the CDC 6600, the statements 'if (x == 0.0)' and 'if (1.0 * x == 0.0)' produce the same results.",
+          "answer": "False",
+          "details": "The latter is a trick used by programmers to deal with variations in how hardware handles tiny numbers.",
+          "tags": [ "Software", "Floating-Point" ]
+        }
+      ]
+    },
+    {
+      "activity": "3.11.3: A need to standardize floating-point",
+      "cards": [
+        {
+          "question": "A graduate student in aeronautical engineering used the IBM 7090 to simulate a new ________.",
+          "answer": "wing design",
+          "details": "Kahan's replacement for IBM's logarithm program helped expose inaccuracies, allowing the student to successfully build the wing.",
+          "tags": [ "History", "Engineering" ]
+        },
+        {
+          "question": "The IEEE formed a committee in ________ to begin drafting a floating-point standard.",
+          "answer": "1977",
+          "details": "Robert G. Stewart, with industry support, formed the subcommittee to improve accuracy and portability.",
+          "tags": [ "Standards" ]
+        }
+      ]
+    },
+    {
+      "activity": "3.11.4: IEEE 754 binary floating-point",
+      "cards": [
+        {
+          "question": "True/False: The release of the IEEE 754 standard made the implementation of floating point hardware simple for manufacturers.",
+          "answer": "False",
+          "details": "Correct implementation demands extraordinary attention to detail and competent ingenuity of design.",
+          "tags": [ "Hardware", "Standards" ]
+        },
+        {
+          "question": "True/False: Kahan was honored with the Turing Award in 1989 for standardizing floating point.",
+          "answer": "True",
+          "details": "His contributions provided fidelity and portability across many computers.",
+          "tags": [ "History", "Awards" ]
+        },
+        {
+          "question": "True/False: IEEE 754, released in 1985, is the most recent floating point standard.",
+          "answer": "False",
+          "details": "IEEE Std 754-2019 is the most recent version, including half and quad precision.",
+          "tags": [ "Standards" ]
+        }
+      ]
+    },
+    {
+      "activity": "4.17.1: Early pipelined computers",
+      "cards": [
+        {
+          "term": "CDC 6600",
+          "definition": "The first supercomputer.",
+          "details": "One of the first computers to use out-of-order execution.",
+          "tags": [ "Architecture", "Pipelining" ]
+        },
+        {
+          "term": "Tomasulo's algorithm",
+          "definition": "An approach using dynamic hazard detection, generalized forwarding, and reservation stations.",
+          "details": "Named after Robert Tomasulo; used for dynamic scheduling.",
+          "tags": [ "Architecture", "Theory" ]
+        },
+        {
+          "term": "IBM 7030",
+          "definition": "A computer that used a four-stage pipeline to overlap fetch, decode, and execute.",
+          "details": "Also known as Stretch; goal was to be 100x faster than the IBM 704.",
+          "tags": [ "Architecture", "History" ]
+        },
+        {
+          "term": "IBM 360/91",
+          "definition": "The computer that introduced Tomasulo's algorithm.",
+          "details": "Had no branch prediction or commit unit.",
+          "tags": [ "Hardware", "Architecture" ]
+        },
+        {
+          "term": "Imprecise interrupts",
+          "definition": "Out-of-order instruction commits led to this unpopular situation.",
+          "details": "Led to the standard of commit units in dynamically scheduled processors.",
+          "tags": [ "Architecture", "Performance" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.1: Development of memory technology",
+      "cards": [
+        {
+          "question": "J. Presper Eckert developed technology based on ________ delay lines to act as registers.",
+          "answer": "mercury",
+          "details": "Mercury delay lines were 100x more cost-effective than vacuum tubes.",
+          "tags": [ "Hardware", "Memory" ]
+        },
+        {
+          "question": "________ had the first known working mercury delay lines.",
+          "answer": "EDSAC",
+          "details": "Developed at Cambridge; had 32 tanks and 512 36-bit words.",
+          "tags": [ "History", "Hardware" ]
+        },
+        {
+          "question": "In the 1950s, ________ memory emerged as a cheaper, faster, and more reliable storage method.",
+          "answer": "core",
+          "details": "Invented by J. Forrester at MIT; uses magnetized ferrite cores.",
+          "tags": [ "Hardware", "Memory" ]
+        },
+        {
+          "question": "Building a ________ became possible because of the development of the integrated circuit.",
+          "answer": "DRAM (direct random access memory)",
+          "details": "First built in the 1970s; allowed for large memory expansions over core memory.",
+          "tags": [ "Hardware", "Memory" ]
+        },
+        {
+          "question": "Currently, DRAMs are packaged with multiple chips on a little board called a ________.",
+          "answer": "DIMM (dual inline memory module)",
+          "details": "Cost has decreased while memory amount has increased.",
+          "tags": [ "Hardware" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.2: Development of memory hierarchies",
+      "cards": [
+        {
+          "term": "IBM 370",
+          "definition": "The computer for which the term translation-lookaside buffer was coined.",
+          "details": "The family first included virtual memory in 1972.",
+          "tags": [ "Architecture", "Memory" ]
+        },
+        {
+          "term": "PDP-11",
+          "definition": "Replaced by the 32-bit VAX because of too little address space.",
+          "details": "A 16-bit computer; architects identified the small address space as a difficult mistake.",
+          "tags": [ "Architecture", "Commercial" ]
+        },
+        {
+          "term": "Atlas",
+          "definition": "First computer to employ two level memory hierarchy.",
+          "details": "Implemented virtual memory a year before the IBM 360 was announced.",
+          "tags": [ "Architecture", "History" ]
+        },
+        {
+          "term": "cache",
+          "definition": "The first implementation was based on tunnel diode memory.",
+          "details": "Likely a direct-mapped instruction cache built at Cambridge around 1965.",
+          "tags": [ "Architecture", "Memory" ]
+        },
+        {
+          "term": "MIPS",
+          "definition": "The first RISC architecture to transition from 32-bit addressing to 64-bit addressing.",
+          "details": "Provided a compatible extension of instruction sets to increase address space.",
+          "tags": [ "Architecture", "Hardware" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.3: Disk storage and flash memory",
+      "cards": [
+        {
+          "question": "True/False: The 1956 IBM 305 RAMAC was the first computer to use a moving-head disk storage system.",
+          "answer": "True",
+          "details": "Moving-head disks eventually became the dominant form of magnetized storage.",
+          "tags": [ "History", "Storage" ]
+        },
+        {
+          "question": "True/False: Intel developed removable hard disk drives.",
+          "answer": "False",
+          "details": "IBM developed removable hard disk drives in 1962, six years before Intel existed.",
+          "tags": [ "History", "Commercial" ]
+        },
+        {
+          "question": "True/False: The sealed Winchester disk replaced removable disks in the 1980s.",
+          "answer": "True",
+          "details": "As the cost of disk electronics decreased, the need to share electronics decreased.",
+          "tags": [ "Storage" ]
+        },
+        {
+          "question": "True/False: Flash memory was first used in cell phones and tablets.",
+          "answer": "False",
+          "details": "Flash memory was first used in digital cameras.",
+          "tags": [ "Hardware", "Storage" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.4: Databases",
+      "cards": [
+        {
+          "question": "A pioneering database management system created at General Electric in 1961.",
+          "answer": "IDS",
+          "details": "Short for Integrated Data Store.",
+          "tags": [ "Software", "Data" ]
+        },
+        {
+          "question": "A database system created to test the viability of relational databases.",
+          "answer": "System R and Ingres",
+          "details": "System R created SQL; Ingres was used for geographic data systems.",
+          "tags": [ "Software", "Data" ]
+        },
+        {
+          "question": "In the 1990s, ________ databases emerged for analytic processing and data mining.",
+          "answer": "parallel",
+          "details": "Improved processing by using multiple disks in parallel.",
+          "tags": [ "Software", "Data" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.5: RAID and protection mechanisms",
+      "cards": [
+        {
+          "question": "True/False: Early RAID systems provided improved performance but suffered from lower mean time to failure (MTTF).",
+          "answer": "True",
+          "details": "Parity schemes were implemented to make the 50-disk systems more reliable.",
+          "tags": [ "Storage", "Performance" ]
+        },
+        {
+          "question": "True/False: IBM filed a patent for RAID rotated parity schemes before researchers at Berkeley published on the concept.",
+          "answer": "True",
+          "details": "IBM filed the patent for RAID 5 first.",
+          "tags": [ "History", "Legal" ]
+        },
+        {
+          "question": "True/False: EMC sold DRAM boards to IBM throughout the 1980s and 1990s.",
+          "answer": "False",
+          "details": "EMC sold boards until 1988, then began making their own RAID systems in 1990.",
+          "tags": [ "Commercial", "History" ]
+        },
+        {
+          "question": "True/False: The I in RAID was changed to stand for 'inexpensive' after realization that early disk arrays were cheaper than disks.",
+          "answer": "False",
+          "details": "Disk arrays were more expensive, so the I changed from 'inexpensive' to 'independent'.",
+          "tags": [ "Storage", "Standards" ]
+        },
+        {
+          "question": "True/False: Capabilities was a protection scheme used in the 1970s and 1980s that allowed a processor to share data while controlling access.",
+          "answer": "True",
+          "details": "Granted access to the object described by the capability.",
+          "tags": [ "Security", "Architecture" ]
+        }
+      ]
+    },
+    {
+      "activity": "5.18.6: Modern operating systems",
+      "cards": [
+        {
+          "term": "Alto",
+          "definition": "The first personal computer.",
+          "details": "Directly inspired the Apple Macintosh.",
+          "tags": [ "Hardware", "History" ]
+        },
+        {
+          "term": "UNIX",
+          "definition": "A timesharing system that incorporated good ideas from MULTICS.",
+          "details": "Now an academic standard OS.",
+          "tags": [ "Software", "OS" ]
+        },
+        {
+          "term": "CTSS",
+          "definition": "First timesharing system",
+          "details": "Built in 1961; allowed three people to share a machine.",
+          "tags": [ "Software", "OS" ]
+        },
+        {
+          "term": "MS-DOS",
+          "definition": "The operating system that Microsoft provided to IBM.",
+          "details": "A revised version of QDOS; sold 500,000 copies in 1983.",
+          "tags": [ "Software", "Commercial" ]
+        },
+        {
+          "term": "BSD",
+          "definition": "Berkeley Software Distribution",
+          "details": "One of the first open source movements.",
+          "tags": [ "Software", "OpenSource" ]
+        },
+        {
+          "term": "Cal TSS",
+          "definition": "Berkeley timesharing system that added paging virtual memory hardware to the SDS 920.",
+          "details": "The SDS 930 became the first commercially available timesharing system with operational hardware/software.",
+          "tags": [ "Architecture", "OS" ]
         }
       ]
     }
