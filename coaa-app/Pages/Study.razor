@@ -2,8 +2,8 @@
 @using coaa_app.Data
 @inject coaa_app.Services.FlashcardService FlashcardService
 
-<div class="d-flex flex-column align-items-center mt-4">
-    <h2 class="fw-bold text-primary mb-3">Week 1 Study</h2>
+<div class="d-flex flex-column align-items-center mt-4 study-container">
+    <h2 class="fw-bold text-primary mb-3 study-header">Week 1 Study</h2>
 
     @if (allCards == null)
     {
@@ -21,15 +21,15 @@
         <div class="mb-2">
             <span class="fw-bold">Card @(CurrentCardIndex + 1) of @TotalCards</span>
         </div>
-        <div class="d-flex justify-content-center gap-2 mb-3 row">
-            <select class="form-select w-auto col-3" @onchange="e => { selectedTag = e.Value.ToString(); ApplyFilter(); }">
+        <div class="d-flex justify-content-center gap-2 mb-3 row study-selects">
+            <select class="form-select w-auto col-3" @onchange="e => { selectedTag = e?.Value?.ToString() ?? string.Empty; ApplyFilter(); }">
                 <option value="">All Tags</option>
                 @foreach (var tag in allTags)
                 {
                     <option value="@tag" selected="@(selectedTag == tag)">@tag</option>
                 }
             </select>
-            <select class="form-select w-auto col-9" @onchange="e => { selectedActivity = e.Value.ToString(); ApplyFilter(); }">
+            <select class="form-select w-auto col-9" @onchange="e => { selectedActivity = e?.Value?.ToString() ?? string.Empty; ApplyFilter(); }">
                 <option value="">All Activities</option>
                 @foreach (var act in allActivities)
                 {
@@ -37,7 +37,7 @@
                 }
             </select>
         </div>
-       <div class="flashcard-anim mb-4"
+        <div class="flashcard-anim mb-4"
              @onpointerdown="OnPointerDown"
              @onpointermove="OnPointerMove"
              @onpointerup="OnPointerUp"
@@ -46,8 +46,7 @@
              @ontouchend:preventDefault>
             <FlashcardView Card="CurrentCard" />
         </div>
-
-        <div class="d-flex justify-content-center gap-3 mt-2">
+        <div class="d-flex justify-content-center gap-3 mt-2 study-controls mobile-hide">
             <button class="btn btn-outline-secondary btn-lg" @onclick="PreviousCard" disabled="@(CurrentCardIndex == 0)">
                 <i class="bi bi-arrow-left-circle"></i> Previous
             </button>
@@ -57,6 +56,25 @@
             <button class="btn btn-outline-info btn-lg" @onclick="ShuffleCards">
                 <i class="bi bi-shuffle"></i> Shuffle
             </button>
+        </div>
+        <div class="mobile-only" style="display: none;">
+            <button class="mobile-side-toggle" @onclick="() => mobileSideVisible = !mobileSideVisible" title="Show/Hide Navigation">
+                <span>@(mobileSideVisible ? "⮜" : "☰")</span>
+            </button>
+            <div class="mobile-side-buttons" style="@(mobileSideVisible ? "display:flex;" : "display:none;")">
+                <button class="btn btn-outline-secondary side-btn prev-btn" @onclick="PreviousCard" disabled="@(CurrentCardIndex == 0)" title="Previous Card">
+                    <i class="bi bi-arrow-left-circle"></i>
+                    <span class="side-btn-label">Previous</span>
+                </button>
+                <button class="btn btn-outline-info side-btn shuffle-btn" @onclick="ShuffleCards" title="Shuffle Cards">
+                    <i class="bi bi-shuffle"></i>
+                    <span class="side-btn-label">Shuffle</span>
+                </button>
+                <button class="btn btn-outline-success side-btn next-btn" @onclick="NextCard" disabled="@(CurrentCardIndex == TotalCards - 1)" title="Next Card">
+                    <i class="bi bi-arrow-right-circle"></i>
+                    <span class="side-btn-label">Next</span>
+                </button>
+            </div>
         </div>
     }
 </div>
@@ -72,8 +90,9 @@
 </style>
 
 @code {
-    private List<(FlashcardJsonItem Card, string ActivityName)> allCards;
-    private List<(FlashcardJsonItem Card, string ActivityName)> filteredCards;
+    private bool mobileSideVisible = false;
+    private List<(FlashcardJsonItem Card, string ActivityName)> allCards = new();
+    private List<(FlashcardJsonItem Card, string ActivityName)> filteredCards = new();
     private int CurrentCardIndex = 0;
 
     private string selectedTag = "";
@@ -81,8 +100,8 @@
     private List<string> allTags = new();
     private List<string> allActivities = new();
 
-    private FlashcardJsonItem CurrentCard => filteredCards?.Count > 0 ? filteredCards[CurrentCardIndex].Card : null;
-    private string CurrentActivityName => filteredCards?.Count > 0 ? filteredCards[CurrentCardIndex].ActivityName : "";
+    private FlashcardJsonItem? CurrentCard => filteredCards != null && filteredCards.Count > 0 ? filteredCards[CurrentCardIndex].Card : null;
+    private string CurrentActivityName => filteredCards != null && filteredCards.Count > 0 ? filteredCards[CurrentCardIndex].ActivityName : "";
     private int TotalCards => filteredCards?.Count ?? 0;
 
     // For swipe detection

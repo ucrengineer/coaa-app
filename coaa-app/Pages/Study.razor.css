@@ -1,0 +1,106 @@
+
+@media (max-width: 600px) {
+
+    .mobile-only {
+        display: block !important;
+    }
+    .mobile-side-toggle {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        z-index: 1100;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 0 1.5rem 1.5rem 0;
+        width: 38px;
+        height: 38px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.08);
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .mobile-side-toggle:active, .mobile-side-toggle:focus {
+        background: #0056b3;
+        outline: none;
+    }
+    .side-btn-label {
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        color: #333;
+        background: rgba(255,255,255,0.85);
+        border-radius: 0.5rem;
+        padding: 0.1rem 0.5rem;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    .mobile-side-buttons {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transform: translateY(-50%);
+        padding: 0.5rem 0.2rem;
+        background: rgba(255,255,255,0.85);
+        border-radius: 0 1.5rem 1.5rem 0;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.08);
+    }
+    .side-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-hide {
+        display: none !important;
+    }
+}
+/* Study.razor mobile-friendly overrides */
+@media (max-width: 600px) {
+    .study-container {
+        padding: 0.5rem;
+    }
+    .study-header {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .flashcard-anim {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+        max-width: 98vw;
+        min-width: 0;
+    }
+    .study-controls {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        width: 100%;
+    }
+    .study-controls button, .study-controls select {
+        width: 100% !important;
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+    .study-selects {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        width: 100%;
+    }
+    .study-selects select {
+        width: 100% !important;
+        font-size: 1rem;
+    }
+}
