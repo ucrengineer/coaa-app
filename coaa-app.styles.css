@@ -160,3 +160,110 @@ main[b-6imnd121up] {
         overflow-y: auto;
     }
 }
+/* /Pages/Study.razor.rz.scp.css */
+
+@media (max-width: 600px) {
+
+    .mobile-only[b-p0z76ztsx8] {
+        display: block !important;
+    }
+    .mobile-side-toggle[b-p0z76ztsx8] {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        z-index: 1100;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 0 1.5rem 1.5rem 0;
+        width: 38px;
+        height: 38px;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.08);
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .mobile-side-toggle:active[b-p0z76ztsx8], .mobile-side-toggle:focus[b-p0z76ztsx8] {
+        background: #0056b3;
+        outline: none;
+    }
+    .side-btn-label[b-p0z76ztsx8] {
+        display: inline-block;
+        margin-left: 0.5rem;
+        font-size: 1rem;
+        color: #333;
+        background: rgba(255,255,255,0.85);
+        border-radius: 0.5rem;
+        padding: 0.1rem 0.5rem;
+        margin-top: 0;
+    }
+}
+@media (max-width: 600px) {
+    .mobile-side-buttons[b-p0z76ztsx8] {
+        position: fixed;
+        top: 10%;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        transform: translateY(-50%);
+        padding: 0.5rem 0.2rem;
+        background: rgba(255,255,255,0.85);
+        border-radius: 0 1.5rem 1.5rem 0;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.08);
+    }
+    .side-btn[b-p0z76ztsx8] {
+        width: 44px;
+        height: 44px;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-hide[b-p0z76ztsx8] {
+        display: none !important;
+    }
+}
+/* Study.razor mobile-friendly overrides */
+@media (max-width: 600px) {
+    .study-container[b-p0z76ztsx8] {
+        padding: 0.5rem;
+    }
+    .study-header[b-p0z76ztsx8] {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    .flashcard-anim[b-p0z76ztsx8] {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100vw;
+        max-width: 98vw;
+        min-width: 0;
+    }
+    .study-controls[b-p0z76ztsx8] {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        width: 100%;
+    }
+    .study-controls button[b-p0z76ztsx8], .study-controls select[b-p0z76ztsx8] {
+        width: 100% !important;
+        font-size: 1rem;
+        padding: 0.75rem 0.5rem;
+    }
+    .study-selects[b-p0z76ztsx8] {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+        width: 100%;
+    }
+    .study-selects select[b-p0z76ztsx8] {
+        width: 100% !important;
+        font-size: 1rem;
+    }
+}
