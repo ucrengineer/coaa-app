@@ -468,6 +468,197 @@
           "tags": [ "Architecture", "OS" ]
         }
       ]
+    },
+    {
+      "activity": "Quiz Module 1",
+      "cards": [
+        {
+          "question": "Question 1 — Computer Architecture vs Computer Organization",
+          "answer": "Architecture is the programmer-visible design (attributes); Organization is how the hardware is built to implement it.",
+          "details": "Architecture includes the ISA, data types, and addressing modes. Organization includes physical circuits, cache layout, and signals. Architecture answers 'what' it does; organization answers 'how'.",
+          "tags": [ "quiz-1", "Architecture", "Theory" ]
+        },
+        {
+          "question": "Question 2 — Stored Program Concept",
+          "answer": "A design where instructions and data are stored together in the same memory space.",
+          "details": "This allows the computer to load and modify programs like data, enabling flexibility. It is the core principle of the von Neumann model.",
+          "tags": [ "quiz-1", "Architecture", "Theory" ]
+        },
+        {
+          "question": "Question 3 — Second Generation Computers",
+          "answer": "The transition from vacuum tubes to transistors.",
+          "details": "Transistors were smaller, faster, cheaper, and produced less heat. Key examples include the IBM 1401 and IBM 7090.",
+          "tags": [ "quiz-1", "History", "Hardware" ]
+        },
+        {
+          "question": "Question 4 — RISC vs CISC (MIPS vs x86)",
+          "answer": "RISC uses simple, fixed-length instructions; CISC uses complex, variable-length instructions.",
+          "details": "RISC (Reduced Instruction Set Computer) focuses on register-to-register operations. CISC (Complex Instruction Set Computer) allows direct memory operands. Modern x86 CPUs translate CISC into RISC-like micro-ops.",
+          "tags": [ "quiz-1", "Architecture", "ISA" ]
+        },
+        {
+          "question": "Question 5 — Moore’s Law",
+          "answer": "The observation that the number of transistors on a chip doubles roughly every 18–24 months.",
+          "details": "This exponential growth drove performance for decades but is currently slowing due to physical power/heat limits and quantum effects.",
+          "tags": [ "quiz-1", "Trends", "Performance" ]
+        },
+        {
+          "question": "Question 6 — Computer Level Hierarchy",
+          "answer": "User → Application → OS/System Software → ISA → Microarchitecture → Digital Logic.",
+          "details": "Abstraction hides the complexity of lower levels from those above. Programmers typically interact with the ISA level, not the individual logic gates.",
+          "tags": [ "quiz-1", "Architecture", "Software" ]
+        },
+        {
+          "question": "Question 7 — Fifth Generation Computers",
+          "answer": "Focused on Artificial Intelligence, machine learning, and natural language processing.",
+          "details": "Characterized by massive parallelism and specialized hardware like TPUs (Tensor Processing Units).",
+          "tags": [ "quiz-1", "History", "AI" ]
+        },
+        {
+          "question": "Question 8 — Software Classes",
+          "answer": "Application software, System software, and Firmware.",
+          "details": "Applications perform user tasks; System software (OS) manages hardware; Firmware provides low-level control for specific hardware (e.g., BIOS).",
+          "tags": [ "quiz-1", "Software" ]
+        },
+        {
+          "question": "Question 9 — PC vs Embedded Computers",
+          "answer": "PCs are general-purpose and flexible; Embedded systems are dedicated to a specific, single function.",
+          "details": "Embedded systems prioritize reliability, cost, and power efficiency (e.g., car ECU). PCs prioritize performance and user programmability.",
+          "tags": [ "quiz-1", "Commercial", "Hardware" ]
+        },
+        {
+          "question": "Question 10 — ENIAC to Smartphones",
+          "answer": "The evolution from room-sized vacuum tube machines to System-on-a-Chip (SoC) portability.",
+          "details": "Microprocessor integration enabled personal computers; higher chip density and power efficiency eventually enabled smartphones.",
+          "tags": [ "quiz-1", "History", "Hardware" ]
+        },
+        {
+          "question": "Question 11 — Binary Representation",
+          "answer": "Data and instructions represented using base-2 (0s and 1s).",
+          "details": "Matches the two electrical states (on/off) of digital circuits.",
+          "tags": [ "quiz-1", "Theory" ]
+        },
+        {
+          "question": "Question 12 — Von Neumann Architecture",
+          "answer": "A computer design with a CPU, a single memory for data/instructions, and I/O components.",
+          "details": "It implements the Stored Program Concept but is limited by the 'Von Neumann Bottleneck' where the CPU must wait for memory access over a shared bus.",
+          "tags": [ "quiz-1", "Architecture" ]
+        },
+        {
+          "question": "Question 13 — CPU",
+          "answer": "Central Processing Unit; the primary component that executes program instructions.",
+          "details": "Consists of the Arithmetic Logic Unit (ALU), Control Unit (CU), and Registers.",
+          "tags": [ "quiz-1", "Hardware" ]
+        },
+        {
+          "question": "Question 14 — ALU",
+          "answer": "Arithmetic Logic Unit; performs calculations and logical comparisons.",
+          "details": "Handles math (ADD, SUB) and logic (AND, OR, NOT). It is the functional 'core' of the processor.",
+          "tags": [ "quiz-1", "Hardware" ]
+        },
+        {
+          "question": "Question 15 — Control Unit",
+          "answer": "The component that directs the operation of the processor.",
+          "details": "It decodes instructions and sends control signals to the ALU, memory, and I/O devices.",
+          "tags": [ "quiz-1", "Hardware" ]
+        },
+        {
+          "question": "Question 16 — Registers",
+          "answer": "Small, high-speed storage locations directly inside the CPU.",
+          "details": "They hold immediate data and instructions being processed. They are the fastest level of the memory hierarchy.",
+          "tags": [ "quiz-1", "Hardware", "Memory" ]
+        },
+        {
+          "question": "Question 17 — Clock",
+          "answer": "An internal timing signal that synchronizes the CPU's operations.",
+          "details": "The clock rate (GHz) determines how many cycles per second the CPU executes.",
+          "tags": [ "quiz-1", "Hardware", "Performance" ]
+        },
+        {
+          "question": "Question 18 — ISA",
+          "answer": "Instruction Set Architecture; the abstract model of a computer that defines what it can do.",
+          "details": "It is the interface between hardware and software, defining instructions, registers, and data types.",
+          "tags": [ "quiz-1", "Architecture", "ISA" ]
+        },
+        {
+          "question": "Question 19 — Word Size",
+          "answer": "The natural number of bits a CPU processes in a single cycle.",
+          "details": "Determines register width and addressable memory space. Most modern CPUs are 64-bit.",
+          "tags": [ "quiz-1", "Architecture" ]
+        },
+        {
+          "question": "Question 20 — Pipelining",
+          "answer": "A technique that overlaps the execution of multiple instructions.",
+          "details": "Increases instruction throughput by ensuring different parts of the CPU are working on different instructions at the same time.",
+          "tags": [ "quiz-1", "Architecture", "Performance" ]
+        },
+        {
+          "question": "Question 21 — Instructions",
+          "answer": "Fundamental commands that tell the CPU to perform a specific action.",
+          "details": "Consists of an opcode (operation) and operands (data or addresses).",
+          "tags": [ "quiz-1", "Software", "ISA" ]
+        },
+        {
+          "question": "Question 22 — Machine Language",
+          "answer": "The lowest-level programming language, consisting entirely of binary code.",
+          "details": "The only language a CPU can execute directly without translation.",
+          "tags": [ "quiz-1", "Software", "ISA" ]
+        },
+        {
+          "question": "Question 23 — Fetch-Decode-Execute",
+          "answer": "The fundamental cycle of a processor to handle one instruction.",
+          "details": "1. Fetch from memory. 2. Decode the opcode. 3. Execute the operation. This repeats billions of times per second.",
+          "tags": [ "quiz-1", "Architecture", "Theory" ]
+        },
+        {
+          "question": "Question 24 — Memory",
+          "answer": "Components used to store data and instructions for immediate or long-term use.",
+          "details": "Categorized into Primary (volatile RAM) and Secondary (non-volatile storage).",
+          "tags": [ "quiz-1", "Memory" ]
+        },
+        {
+          "question": "Question 25 — Cache Memory",
+          "answer": "Small, high-speed memory that sits between the CPU and RAM.",
+          "details": "Stores frequently accessed data to reduce the 'memory wall' latency.",
+          "tags": [ "quiz-1", "Memory", "Hardware" ]
+        },
+        {
+          "question": "Question 26 — RAM",
+          "answer": "Random Access Memory; the primary volatile memory used by the OS and applications.",
+          "details": "Allows fast read/write access to any location. Data is lost when power is cut.",
+          "tags": [ "quiz-1", "Memory" ]
+        },
+        {
+          "question": "Question 27 — Secondary Storage",
+          "answer": "Non-volatile storage devices like SSDs and HDDs.",
+          "details": "Much larger capacity than RAM but significantly slower access speeds.",
+          "tags": [ "quiz-1", "Storage" ]
+        },
+        {
+          "question": "Question 28 — Bus System",
+          "answer": "A set of physical connections used to transfer data between computer components.",
+          "details": "Includes the Data Bus (data), Address Bus (locations), and Control Bus (signals).",
+          "tags": [ "quiz-1", "Hardware" ]
+        },
+        {
+          "question": "Question 29 — I/O",
+          "answer": "Input/Output; the interface between the computer and external devices.",
+          "details": "Input (keyboard/mouse) provides data; Output (monitor/printer) displays or exports data.",
+          "tags": [ "quiz-1", "Hardware" ]
+        },
+        {
+          "question": "Question 30 — Microprocessor",
+          "answer": "A complete CPU integrated onto a single silicon chip.",
+          "details": "Enabled the Fourth Generation of computing and the decentralization of computer power.",
+          "tags": [ "quiz-1", "Hardware", "History" ]
+        },
+        {
+          "question": "Question 31 — Integrated Circuit",
+          "answer": "A semiconductor wafer holding many transistors and electronic components.",
+          "details": "Replaced discrete components, leading to the Third Generation and massive size reduction.",
+          "tags": [ "quiz-1", "Hardware", "History" ]
+        }
+      ]
     }
   ]
 }
