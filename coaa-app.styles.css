@@ -169,7 +169,7 @@ main[b-6imnd121up] {
     }
     .mobile-side-toggle[b-p0z76ztsx8] {
         position: fixed;
-        top: 10%;
+        top: 30%;
         left: 0;
         z-index: 1100;
         background: #007bff;
@@ -204,7 +204,7 @@ main[b-6imnd121up] {
 @media (max-width: 600px) {
     .mobile-side-buttons[b-p0z76ztsx8] {
         position: fixed;
-        top: 10%;
+        top: 30%;
         left: 0;
         z-index: 1000;
         display: flex;
