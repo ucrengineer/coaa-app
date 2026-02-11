@@ -475,48 +475,48 @@
         {
           "question": "Question 1 — Computer Architecture vs Computer Organization",
           "answer": "Architecture is the programmer-visible design (attributes); Organization is how the hardware is built to implement it.",
-          "details": "Architecture includes the ISA, data types, and addressing modes. Organization includes physical circuits, cache layout, and signals. Architecture answers 'what' it does; organization answers 'how'.",
+          "details": "Architecture includes the key architectural elements:  ISA, Programmer-Visible Storage, Execution Behavior, and I/O Interface. Computer architectures are commonly classified into major families such as x86, ARM, MIPS, and RISC-V. Computer architecture is a abstraction, where Organization is the actual implementation. Organization includes key organizational elements such as hardware implementation details, control unit design, datapath organization, memory system implemenation,and clock distribution and timing. Different organizations can implement the same architecture with varying performance, cost, and power characteristics.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
         },
         {
           "question": "Question 2 — Stored Program Concept",
-          "answer": "A design where instructions and data are stored together in the same memory space.",
+          "answer": "The Stored Program Concept is the architectural principle where both program instructions and data are stored in the same memory space. This concept transformed computers from fixed-purpose calculators into truly programmable, general-purpose machines.",
           "details": "This allows the computer to load and modify programs like data, enabling flexibility. It is the core principle of the von Neumann model.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
         },
         {
           "question": "Question 3 — Second Generation Computers",
-          "answer": "The transition from vacuum tubes to transistors.",
+          "answer": "Defined by transistor technology, offering dramatic size reduction, power efficiency, and improved reliability. Magnetic core memory and the introduction of assembly language and high-level programming languages marked this era's advances.A Transistor is a semiconductor device that can amplify or switch electronic signals, serving as the fundamental building block of modern electronics. Transistors replaced vacuum tubes in Second Generation computers, offering smaller size, lower power consumption, and greater reliability.",
           "details": "Transistors were smaller, faster, cheaper, and produced less heat. Key examples include the IBM 1401 and IBM 7090.",
           "tags": [ "quiz-1", "History", "Hardware" ]
         },
         {
           "question": "Question 4 — RISC vs CISC (MIPS vs x86)",
-          "answer": "RISC uses simple, fixed-length instructions; CISC uses complex, variable-length instructions.",
+            "answer": "MIPS (RISC) uses simple, fixed-length instructions, a load-store architecture, and 32 general-purpose registers for efficient pipelining. x86 (CISC) uses complex, variable-length instructions, supports memory-to-memory operations, and maintains backward compatibility with extensive instruction sets.",
           "details": "RISC (Reduced Instruction Set Computer) focuses on register-to-register operations. CISC (Complex Instruction Set Computer) allows direct memory operands. Modern x86 CPUs translate CISC into RISC-like micro-ops.",
           "tags": [ "quiz-1", "Architecture", "ISA" ]
         },
         {
           "question": "Question 5 — Moore’s Law",
-          "answer": "The observation that the number of transistors on a chip doubles roughly every 18–24 months.",
+          "answer": "Moore's Law is the observation that the number of transistors on an integrated circuit doubles approximately every two years, driving exponential growth in computing power. While not a physical law, this trend guided the semiconductor industry for over 50 years and shaped expectations for technological progress.",
           "details": "This exponential growth drove performance for decades but is currently slowing due to physical power/heat limits and quantum effects.",
           "tags": [ "quiz-1", "Trends", "Performance" ]
         },
         {
           "question": "Question 6 — Computer Level Hierarchy",
-          "answer": "User → Application → OS/System Software → ISA → Microarchitecture → Digital Logic.",
+          "answer": "User: Human interaction level with complete abstraction from technical implementation → High-Level Language: Programming abstraction using human-readable syntax and automatic management → Assembly Language: Symbolic instruction representation with direct hardware correspondence → System Software: Resource management and hardware abstraction through operating systems → Machine: Instruction set architecture defining the hardware-software interface → Control: Hardware implementation managing instruction execution and processor coordination → Digital Logic: Electronic foundation using Boolean logic and circuit implementation.",
           "details": "Abstraction hides the complexity of lower levels from those above. Programmers typically interact with the ISA level, not the individual logic gates.",
           "tags": [ "quiz-1", "Architecture", "Software" ]
         },
         {
           "question": "Question 7 — Fifth Generation Computers",
-          "answer": "Focused on Artificial Intelligence, machine learning, and natural language processing.",
+          "answer": "Characterized by Artificial Intelligence (AI) integration and novel computing paradigms. Includes machine learning, quantum computing, neuromorphic computing, and specialized AI hardware, revolutionizing industries with human-like intelligence capabilities.",
           "details": "Characterized by massive parallelism and specialized hardware like TPUs (Tensor Processing Units).",
           "tags": [ "quiz-1", "History", "AI" ]
         },
         {
           "question": "Question 8 — Software Classes",
-          "answer": "Application software, System software, and Firmware.",
+          "answer": "Different categories of computer programs. Application software are programs for end-users to accomplish specific tasks. Systems software are fundamental programs that manage hardware and provide platforms. Operating systems are teh primary interface between hardware and applications. Firmware is low-level software providing basic operational instructions.",
           "details": "Applications perform user tasks; System software (OS) manages hardware; Firmware provides low-level control for specific hardware (e.g., BIOS).",
           "tags": [ "quiz-1", "Software" ]
         },
@@ -540,121 +540,121 @@
         },
         {
           "question": "Question 12 — Von Neumann Architecture",
-          "answer": "A computer design with a CPU, a single memory for data/instructions, and I/O components.",
+          "answer": "Von Neumann Architecture is the computer design model where a single memory stores both instructions and data, with a CPU that processes them sequentially. This architecture, based on the Stored Program Concept, became the foundational blueprint for nearly all modern computers.",
           "details": "It implements the Stored Program Concept but is limited by the 'Von Neumann Bottleneck' where the CPU must wait for memory access over a shared bus.",
           "tags": [ "quiz-1", "Architecture" ]
         },
         {
           "question": "Question 13 — CPU",
-          "answer": "Central Processing Unit; the primary component that executes program instructions.",
+          "answer": "The CPU (Central Processing Unit) is the primary component of a computer that executes instructions and performs calculations. Often called the \"brain\" of the computer, it contains the ALU, Control Unit, and registers that work together to process data.",
           "details": "Consists of the Arithmetic Logic Unit (ALU), Control Unit (CU), and Registers.",
           "tags": [ "quiz-1", "Hardware" ]
         },
         {
           "question": "Question 14 — ALU",
-          "answer": "Arithmetic Logic Unit; performs calculations and logical comparisons.",
+          "answer": "The ALU (Arithmetic Logic Unit) performs arithmetic operations (addition, subtraction) and logical operations (AND, OR, NOT) on data. It serves as the computational core of the processor where actual calculations take place.",
           "details": "Handles math (ADD, SUB) and logic (AND, OR, NOT). It is the functional 'core' of the processor.",
           "tags": [ "quiz-1", "Hardware" ]
         },
         {
           "question": "Question 15 — Control Unit",
-          "answer": "The component that directs the operation of the processor.",
+          "answer": "The Control Unit (CU) directs and coordinates the fetching, decoding, and execution of instructions within the processor. It interprets instructions and generates the control signals that orchestrate the operation of other CPU components.",
           "details": "It decodes instructions and sends control signals to the ALU, memory, and I/O devices.",
           "tags": [ "quiz-1", "Hardware" ]
         },
         {
           "question": "Question 16 — Registers",
-          "answer": "Small, high-speed storage locations directly inside the CPU.",
+          "answer": "Registers are small, high-speed storage locations within the CPU that temporarily hold data and instructions during processing. They serve as the fastest accessible working space for the processor, enabling rapid data manipulation.",
           "details": "They hold immediate data and instructions being processed. They are the fastest level of the memory hierarchy.",
           "tags": [ "quiz-1", "Hardware", "Memory" ]
         },
         {
           "question": "Question 17 — Clock",
-          "answer": "An internal timing signal that synchronizes the CPU's operations.",
+          "answer": "The Clock coordinates the timing of operations throughout a computer system, generating regular electrical pulses that synchronize all activities. Clock speed, measured in Hertz (Hz), determines how many operations a processor can perform per second.",
           "details": "The clock rate (GHz) determines how many cycles per second the CPU executes.",
           "tags": [ "quiz-1", "Hardware", "Performance" ]
         },
         {
           "question": "Question 18 — ISA",
-          "answer": "Instruction Set Architecture; the abstract model of a computer that defines what it can do.",
+          "answer": "Instruction Set Architecture (ISA) defines the set of instructions a processor can execute, including data types, registers, addressing modes, and memory architecture. The ISA serves as the critical interface between hardware and software, determining how programs communicate with the processor.",
           "details": "It is the interface between hardware and software, defining instructions, registers, and data types.",
           "tags": [ "quiz-1", "Architecture", "ISA" ]
         },
         {
           "question": "Question 19 — Word Size",
-          "answer": "The natural number of bits a CPU processes in a single cycle.",
+          "answer": "Word Size refers to the number of bits a processor can process in a single operation, determining the width of registers, memory addresses, and data paths. Common word sizes include 8-bit, 16-bit, 32-bit, and 64-bit, with larger sizes enabling more memory addressing and data processing capacity.",
           "details": "Determines register width and addressable memory space. Most modern CPUs are 64-bit.",
           "tags": [ "quiz-1", "Architecture" ]
         },
         {
           "question": "Question 20 — Pipelining",
-          "answer": "A technique that overlaps the execution of multiple instructions.",
+          "answer": "Pipelining is a processor design technique that overlaps the execution of multiple instructions by dividing the instruction cycle into stages. Like an assembly line, pipelining allows different instructions to occupy different stages simultaneously, significantly improving throughput.",
           "details": "Increases instruction throughput by ensuring different parts of the CPU are working on different instructions at the same time.",
           "tags": [ "quiz-1", "Architecture", "Performance" ]
         },
         {
           "question": "Question 21 — Instructions",
-          "answer": "Fundamental commands that tell the CPU to perform a specific action.",
+          "answer": "Instructions are the basic commands that tell a computer processor what operations to perform. They serve as the fundamental interface between software logic and hardware execution, specifying operations like data movement, arithmetic, and control flow.",
           "details": "Consists of an opcode (operation) and operands (data or addresses).",
           "tags": [ "quiz-1", "Software", "ISA" ]
         },
         {
           "question": "Question 22 — Machine Language",
-          "answer": "The lowest-level programming language, consisting entirely of binary code.",
+          "answer": "Machine Language consists of binary codes that the processor can directly execute, representing the lowest level of programming. Each instruction is encoded as a specific pattern of 0s and 1s that the hardware interprets and executes.",
           "details": "The only language a CPU can execute directly without translation.",
           "tags": [ "quiz-1", "Software", "ISA" ]
         },
         {
           "question": "Question 23 — Fetch-Decode-Execute",
-          "answer": "The fundamental cycle of a processor to handle one instruction.",
+          "answer": "The Fetch-Decode-Execute Cycle is the fundamental operational process by which a CPU processes instructions. The processor fetches an instruction from memory, decodes it to determine the required operation, executes the operation, and then repeats the cycle for the next instruction.",
           "details": "1. Fetch from memory. 2. Decode the opcode. 3. Execute the operation. This repeats billions of times per second.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
         },
         {
           "question": "Question 24 — Memory",
-          "answer": "Components used to store data and instructions for immediate or long-term use.",
+          "answer": "Memory refers to the computer components that store data and instructions for immediate access by the processor, enabling efficient program execution and data manipulation.",
           "details": "Categorized into Primary (volatile RAM) and Secondary (non-volatile storage).",
           "tags": [ "quiz-1", "Memory" ]
         },
         {
           "question": "Question 25 — Cache Memory",
-          "answer": "Small, high-speed memory that sits between the CPU and RAM.",
+          "answer": "Cache Memory is a small, extremely fast memory located close to or within the CPU that stores frequently accessed data and instructions. By reducing the time needed to access data from slower main memory, cache significantly improves processor performance.",
           "details": "Stores frequently accessed data to reduce the 'memory wall' latency.",
           "tags": [ "quiz-1", "Memory", "Hardware" ]
         },
         {
           "question": "Question 26 — RAM",
-          "answer": "Random Access Memory; the primary volatile memory used by the OS and applications.",
+          "answer": "Main Memory, commonly called RAM (Random Access Memory), provides temporary, volatile storage for programs and data currently in use by the processor. Its contents are lost when power is removed, but it offers much faster access than secondary storage.",
           "details": "Allows fast read/write access to any location. Data is lost when power is cut.",
           "tags": [ "quiz-1", "Memory" ]
         },
         {
           "question": "Question 27 — Secondary Storage",
-          "answer": "Non-volatile storage devices like SSDs and HDDs.",
+          "answer": "Secondary Storage refers to non-volatile storage devices such as hard disk drives (HDDs) and solid-state drives (SSDs) that retain data permanently. While slower than main memory, secondary storage provides large-capacity, persistent storage for programs and files.",
           "details": "Much larger capacity than RAM but significantly slower access speeds.",
           "tags": [ "quiz-1", "Storage" ]
         },
         {
           "question": "Question 28 — Bus System",
-          "answer": "A set of physical connections used to transfer data between computer components.",
+          "answer": "The Bus System provides the electrical pathways that enable communication between different components of a computer. It consists of data buses, address buses, and control buses that transfer information between the CPU, memory, and I/O devices.",
           "details": "Includes the Data Bus (data), Address Bus (locations), and Control Bus (signals).",
           "tags": [ "quiz-1", "Hardware" ]
         },
         {
           "question": "Question 29 — I/O",
-          "answer": "Input/Output; the interface between the computer and external devices.",
+          "answer": "Input/Output (I/O) encompasses the mechanisms that allow computers to interact with external devices and users. Input devices (keyboard, mouse) send data to the computer, while output devices (monitor, printer) receive data from the computer.",
           "details": "Input (keyboard/mouse) provides data; Output (monitor/printer) displays or exports data.",
           "tags": [ "quiz-1", "Hardware" ]
         },
         {
           "question": "Question 30 — Microprocessor",
-          "answer": "A complete CPU integrated onto a single silicon chip.",
+          "answer": "Microprocessors are complete CPUs implemented on single integrated circuit chips. They enabled mass production of computers, launched the fourth generation, and made personal computing economically viable.",
           "details": "Enabled the Fourth Generation of computing and the decentralization of computer power.",
           "tags": [ "quiz-1", "Hardware", "History" ]
         },
         {
           "question": "Question 31 — Integrated Circuit",
-          "answer": "A semiconductor wafer holding many transistors and electronic components.",
+          "answer": "An Integrated Circuit (IC) is a set of electronic circuits fabricated on a single piece of semiconductor material, typically silicon. ICs enabled Third Generation computers by combining thousands of transistors into compact, reliable chips.",
           "details": "Replaced discrete components, leading to the Third Generation and massive size reduction.",
           "tags": [ "quiz-1", "Hardware", "History" ]
         }
