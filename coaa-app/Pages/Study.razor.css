@@ -6,7 +6,7 @@
     }
     .mobile-side-toggle {
         position: fixed;
-        top: 10%;
+        top: 30%;
         left: 0;
         z-index: 1100;
         background: #007bff;
@@ -41,7 +41,7 @@
 @media (max-width: 600px) {
     .mobile-side-buttons {
         position: fixed;
-        top: 10%;
+        top: 30%;
         left: 0;
         z-index: 1000;
         display: flex;

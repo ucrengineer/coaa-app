@@ -17,7 +17,7 @@
                 <span class="fw-bold text-primary fs-4">@Card.Question</span>
             </div>
             <div class="flashcard-answer mb-3">
-                <button class="btn btn-outline-primary btn-lg px-4 py-2 mt-2" @onclick="ToggleShowAnswer" @onpointerdown="ToggleShowAnswer">
+                <button class="btn btn-outline-primary btn-lg px-4 py-2 mt-2" @onclick="ToggleShowAnswer">
                     <i class="bi bi-eye"></i> @(showAnswer ? "Hide Answer" : "Show Answer")
                 </button>
                 @if (showAnswer)
