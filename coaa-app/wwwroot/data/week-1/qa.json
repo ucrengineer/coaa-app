@@ -474,8 +474,8 @@
       "cards": [
         {
           "question": "Question 1 — Computer Architecture vs Computer Organization",
-          "answer": "Architecture is the programmer-visible design (attributes); Organization is how the hardware is built to implement it.",
-          "details": "Architecture includes the key architectural elements:  ISA, Programmer-Visible Storage, Execution Behavior, and I/O Interface. Computer architectures are commonly classified into major families such as x86, ARM, MIPS, and RISC-V. Computer architecture is a abstraction, where Organization is the actual implementation. Organization includes key organizational elements such as hardware implementation details, control unit design, datapath organization, memory system implemenation,and clock distribution and timing. Different organizations can implement the same architecture with varying performance, cost, and power characteristics.",
+          "answer": "Architecture includes the key architectural elements:  ISA, Programmer-Visible Storage, Execution Behavior, and I/O Interface. Computer architectures are commonly classified into major families such as x86, ARM, MIPS, and RISC-V. Computer architecture is a abstraction, where Organization is the actual implementation. Organization includes key organizational elements such as hardware implementation details, control unit design, datapath organization, memory system implemenation,and clock distribution and timing. Different organizations can implement the same architecture with varying performance, cost, and power characteristics.",
+          "details": "Architecture includes the ISA, data types, and addressing modes. Organization includes physical circuits, cache layout, and signals. Architecture answers 'what' it does; organization answers 'how'.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
         },
         {
