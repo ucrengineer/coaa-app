@@ -1,0 +1,79 @@
+{
+  "flashcards": [
+    {
+      "activity": "Digital Logic: Foundations",
+      "cards": [
+        {
+          "question": "Explain what Binary/Data Representation means and why computers use only 0s and 1s to store all information.",
+          "answer": "Binary representation encodes data using two states (0 and 1) corresponding to 'off' and 'on' electrical signals.",
+          "details": "Computers use binary because it is electrically reliable and less prone to noise than systems with multiple voltage levels. This simplicity allows transistors to act as fast, reliable switches.",
+          "tags": [ "Theory", "Binary" ],
+          "images": [ ]
+        },
+        {
+          "question": "Describe what Boolean Algebra is and name the three fundamental Boolean operations used in digital logic.",
+          "answer": "Boolean Algebra is a branch of mathematics where variable values are truth values (1/True, 0/False).",
+          "details": "It provides the mathematical foundation for analyzing and simplifying digital circuits. The three fundamental operations are AND, OR, and NOT.",
+          "tags": [ "Logic", "Boolean Algebra" ],
+          "images": []
+        },
+        {
+          "question": "What is a Truth Table and how is it used to verify the behavior of logic gates?",
+          "answer": "A Truth Table is a mathematical table showing every possible output for every possible combination of inputs.",
+          "details": "It is used to verify a gate's behavior by listing all $2^n$ input combinations (e.g., 00, 01, 10, 11 for a 2-input gate) and their resulting output.",
+          "tags": [ "Logic", "Verification" ],
+          "images": [ ]
+        },
+        {
+          "question": "Explain the difference between AND Gates and OR Gates in terms of their output behavior.",
+          "answer": "An AND gate outputs 1 only if all inputs are 1; an OR gate outputs 1 if at least one input is 1.",
+          "details": "The AND gate represents a series requirement (both must be true), while the OR gate represents a parallel possibility (either can be true).",
+          "tags": [ "Logic Gates", "Hardware" ],
+          "images": [ "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcTB0Xw1E2yLnt8cKftXeMqE7V5mpzL_BA2Baas5HSedxOYCnr1LGoh6NuMwTI0LWgS1jO1AS19GXtQcfkosZHwwlA9BZVVuvXCmtLn3QONHguo7CMY" ]
+        },
+        {
+          "question": "What are transistors and why were they a major improvement over vacuum tubes in computer development?",
+          "answer": "Transistors are semiconductor switches; they improved computers by being smaller, more reliable, and more energy-efficient than vacuum tubes.",
+          "details": "Unlike vacuum tubes, transistors do not require a filament to heat up, meaning they produce less heat and have a much longer lifespan, allowing for the miniaturization of processors.",
+          "tags": [ "Hardware", "History" ],
+          "images": [  ]
+        },
+        {
+          "question": "Explain the fundamental difference between Simple Combinational Circuits and Simple Sequential Circuits in terms of memory and timing.",
+          "answer": "Combinational circuits depend only on current inputs; sequential circuits depend on current inputs and past states (memory).",
+          "details": "Combinational logic (like an adder) has no memory. Sequential logic (like a counter) uses flip-flops and a clock signal to store and track states over time.",
+          "tags": [ "Digital Design", "Sequential Logic" ],
+          "images": [ "https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcSkv2gDln_KFDHndFto9zV8lo_EPYjMkFmh4WlsleaUO3syPFc_JE1KB6CfApbqsZP-vhuw6tKa10xh7K3GKEu3oJefU3Hn85zDvSMUDywGmVOf5AM" ]
+        },
+        {
+          "question": "Describe what Physical Limitations mean for electronic circuits and name two specific constraints that affect circuit performance.",
+          "answer": "Physical limitations are material constraints preventing infinite speed; two specific constraints are heat dissipation and propagation delay.",
+          "details": "Heat dissipation limits how much power can be used before components melt, while propagation delay is the finite time required for a signal to travel through a wire or gate.",
+          "tags": [ "Hardware", "Performance" ],
+          "images": []
+        },
+        {
+          "question": "What is Logisim Evolution and how does it help students learn digital logic concepts?",
+          "answer": "Logisim Evolution is a graphical simulation tool used for designing and testing digital logic circuits.",
+          "details": "It helps students by providing a visual platform to build complex components like ALUs or CPUs and observe signal behavior in real-time without physical hardware.",
+          "tags": [ "Software", "Education" ],
+          "images": [ ]
+        },
+        {
+          "question": "Explain what Clock/Timing refers to in digital systems and why synchronization is important for circuit operation.",
+          "answer": "The clock is a steady pulse that synchronizes circuit actions; synchronization ensures all data is stable before the next operation begins.",
+          "details": "Without a clock, signals arriving at different times (due to varying wire lengths) could cause 'glitches' or incorrect calculations in complex circuits.",
+          "tags": [ "Timing", "Clock" ],
+          "images": [ ]
+        },
+        {
+          "question": "Describe what flip-flops are and explain how they differ from basic logic gates in terms of storing information.",
+          "answer": "Flip-flops are 1-bit memory elements that maintain a stable state; they differ from gates by using feedback to 'remember' data.",
+          "details": "Logic gates only process data immediately; flip-flops capture and hold that data until the next clock pulse, forming the basis of registers and RAM.",
+          "tags": [ "Hardware", "Memory" ],
+          "images": []
+        }
+      ]
+    }
+  ]
+}
