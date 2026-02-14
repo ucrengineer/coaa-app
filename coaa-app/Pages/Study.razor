@@ -2,8 +2,19 @@
 @using coaa_app.Data
 @inject coaa_app.Services.FlashcardService FlashcardService
 
+@code {
+    private string selectedWeek = "week-1";
+}
+
 <div class="d-flex flex-column align-items-center mt-4 study-container">
-    <h2 class="fw-bold text-primary mb-3 study-header">Week 1 Study</h2>
+    <div class="d-flex align-items-center mb-3">
+        <label class="me-2 fw-bold">Select Week:</label>
+        <select class="form-select w-auto" @bind="selectedWeek" @bind:after="LoadWeekAsync">
+            <option value="week-1">Week 1</option>
+            <option value="week-2">Week 2</option>
+        </select>
+    </div>
+    <h2 class="fw-bold text-primary mb-3 study-header">@((selectedWeek == "week-1") ? "Week 1 Study" : "Week 2 Study")</h2>
 
     @if (allCards == null)
     {
@@ -248,7 +259,20 @@
 
     protected override async Task OnInitializedAsync()
     {
-        var data = await FlashcardService.GetWeek1Async();
+        await LoadWeekAsync();
+    }
+
+    private async Task LoadWeekAsync()
+    {
+        FlashcardJson data;
+        if (selectedWeek == "week-2")
+        {
+            data = await FlashcardService.GetWeek2Async();
+        }
+        else
+        {
+            data = await FlashcardService.GetWeek1Async();
+        }
         allCards = new();
         allTags = new();
         allActivities = new();
@@ -271,6 +295,7 @@
         }
         filteredCards = new List<(FlashcardJsonItem Card, string ActivityName)>(allCards);
         CurrentCardIndex = 0;
+        StateHasChanged();
     }
 
     private void ApplyFilter()

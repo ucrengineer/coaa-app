@@ -8,24 +8,28 @@
           "answer": "ENIAC",
           "details": "Electronic Numerical Integrator and Calculator, developed by Eckert and Mauchly.",
           "tags": [ "History", "Hardware" ]
+          , "images": []
         },
         {
           "question": "The ENIAC was developed in the 1940s at the University of ________.",
           "answer": "Pennsylvania",
           "details": "Funded by the U.S. Army for computing artillery-firing tables during WWII.",
           "tags": [ "History" ]
+          , "images": []
         },
         {
           "question": "A team including Alan Turing built Colossus to decrypt ________ messages during World War II.",
           "answer": "German",
           "details": "Decrypting these messages is estimated to have reduced the war by two years.",
           "tags": [ "History", "Security" ]
+          , "images": []
         },
         {
           "question": "A computer using separate memories for instructions and data is known as a ________ architecture.",
           "answer": "Harvard",
           "details": "Named after the Mark-III and Mark-IV computers developed at Harvard.",
           "tags": [ "Architecture" ]
+          , "images": []
         }
       ]
     },
@@ -37,6 +41,7 @@
           "definition": "Product line of computers with varying cost and performance.",
           "details": "Varying cost from $225k-$1.9M and clock rates of 1.6 MHz to 5.1MHz.",
           "tags": [ "Commercial", "Hardware" ]
+          , "images": []
         },
         {
           "term": "PDP-8",
@@ -49,12 +54,14 @@
           "definition": "Supercomputer",
           "details": "The fastest and most expensive computer in 1976, costing $4,000,000.",
           "tags": [ "Commercial", "Hardware", "Performance" ]
+          , "images": []
         },
         {
           "term": "Intel 4004",
           "definition": "Microprocessor",
           "details": "Introduced in 1971, it was the first CPU integrated into a single integrated circuit (IC).",
           "tags": [ "Hardware", "Innovation" ]
+          , "images": []
         }
       ]
     },
@@ -66,18 +73,21 @@
           "answer": "IBM Personal Computer",
           "details": "Its popularity led to the dominance of Microsoft's operating systems.",
           "tags": [ "Commercial", "History" ]
+          , "images": []
         },
         {
           "question": "True/False: The first personal computers did not come with a pointing device, such as a mouse.",
           "answer": "True",
           "details": "Early computers were text-based; the Xerox Alto was an early influencer of GUI and mouse use.",
           "tags": [ "Hardware", "UX" ]
+          , "images": []
         },
         {
           "question": "What was the only nonvolatile storage in the first personal computers?",
           "answer": "Floppy drives",
           "details": "Used to retain programs and data when power was removed.",
           "tags": [ "Hardware", "Storage" ]
+          , "images": []
         }
       ]
     },
@@ -89,12 +99,14 @@
           "answer": "False",
           "details": "Execution times became too varied; standard benchmarks using sets of applications are now used.",
           "tags": [ "Performance", "Theory" ]
+          , "images": []
         },
         {
           "question": "If Computer A runs 10 Whetstones/sec and Computer B runs 12 Whetstones/sec, which is faster?",
           "answer": "Computer B",
           "details": "Higher iterations per second indicates a faster computer.",
           "tags": [ "Performance", "Benchmarks" ]
+          , "images": []
         },
         {
           "question": "True/False: The SPEC benchmarks change as computers evolve.",
@@ -112,6 +124,7 @@
           "definition": "Reduced instruction set computer architecture",
           "details": "Relies on small, simple instructions. Most current instruction sets employ this model.",
           "tags": [ "Architecture", "Theory" ]
+          , "images": []
         },
         {
           "term": "Load-store architecture",
@@ -124,6 +137,7 @@
           "definition": "Single register architecture",
           "details": "Earliest computers used one register (the accumulator) for all arithmetic operations.",
           "tags": [ "Architecture", "History" ]
+          , "images": []
         },
         {
           "term": "Stack architecture",
@@ -141,12 +155,14 @@
           "answer": "Cobol",
           "details": "Short for COmmon Business-Oriented Language.",
           "tags": [ "Software", "Languages" ]
+          , "images": []
         },
         {
           "question": "In the 1970s, Bell Labs built the UNIX operating system using the ________ language.",
           "answer": "C",
           "details": "C's popularity grew with UNIX and influenced languages like C++.",
           "tags": [ "Software", "Languages", "History" ]
+          , "images": []
         },
         {
           "question": "________ is currently the most popular language to teach in schools and standard for business data processing.",
@@ -164,12 +180,14 @@
           "answer": "False",
           "details": "John von Neumann refused to include it due to increased complexity and memory loss.",
           "tags": [ "Hardware", "Architecture", "History" ]
+          , "images": []
         },
         {
           "question": "True/False: Floating-point hardware became standardized by the late 1950s.",
           "answer": "False",
           "details": "Each implementation was different, leading to inconsistent results across different computers.",
           "tags": [ "Hardware", "Standards" ]
+          , "images": []
         }
       ]
     },
@@ -181,18 +199,21 @@
           "answer": "True",
           "details": "The IBM S/360's larger memory and narrower single precision words produced inaccurate results compared to the IBM 7094.",
           "tags": [ "Hardware", "Floating-Point" ]
+          , "images": []
         },
         {
           "question": "True/False: Reduced floating-point accuracy and the high cost of converting code lead to the formation of a subcommittee of IBM mainframe users to propose improvements.",
           "answer": "True",
           "details": "IBM eventually updated the System/360 floating point based on these recommendations.",
           "tags": [ "Standards", "History" ]
+          , "images": []
         },
         {
           "question": "True/False: On the CDC 6600, the statements 'if (x == 0.0)' and 'if (1.0 * x == 0.0)' produce the same results.",
           "answer": "False",
           "details": "The latter is a trick used by programmers to deal with variations in how hardware handles tiny numbers.",
           "tags": [ "Software", "Floating-Point" ]
+          , "images": []
         }
       ]
     },
@@ -204,12 +225,14 @@
           "answer": "wing design",
           "details": "Kahan's replacement for IBM's logarithm program helped expose inaccuracies, allowing the student to successfully build the wing.",
           "tags": [ "History", "Engineering" ]
+          , "images": []
         },
         {
           "question": "The IEEE formed a committee in ________ to begin drafting a floating-point standard.",
           "answer": "1977",
           "details": "Robert G. Stewart, with industry support, formed the subcommittee to improve accuracy and portability.",
           "tags": [ "Standards" ]
+          , "images": []
         }
       ]
     },
@@ -227,6 +250,7 @@
           "answer": "True",
           "details": "His contributions provided fidelity and portability across many computers.",
           "tags": [ "History", "Awards" ]
+          , "images": []
         },
         {
           "question": "True/False: IEEE 754, released in 1985, is the most recent floating point standard.",
@@ -244,6 +268,7 @@
           "definition": "The first supercomputer.",
           "details": "One of the first computers to use out-of-order execution.",
           "tags": [ "Architecture", "Pipelining" ]
+          , "images": []
         },
         {
           "term": "Tomasulo's algorithm",
@@ -262,12 +287,14 @@
           "definition": "The computer that introduced Tomasulo's algorithm.",
           "details": "Had no branch prediction or commit unit.",
           "tags": [ "Hardware", "Architecture" ]
+          , "images": []
         },
         {
           "term": "Imprecise interrupts",
           "definition": "Out-of-order instruction commits led to this unpopular situation.",
           "details": "Led to the standard of commit units in dynamically scheduled processors.",
           "tags": [ "Architecture", "Performance" ]
+          , "images": []
         }
       ]
     },
@@ -279,6 +306,7 @@
           "answer": "mercury",
           "details": "Mercury delay lines were 100x more cost-effective than vacuum tubes.",
           "tags": [ "Hardware", "Memory" ]
+          , "images": []
         },
         {
           "question": "________ had the first known working mercury delay lines.",
@@ -303,6 +331,7 @@
           "answer": "DIMM (dual inline memory module)",
           "details": "Cost has decreased while memory amount has increased.",
           "tags": [ "Hardware" ]
+          , "images": []
         }
       ]
     },
@@ -314,12 +343,14 @@
           "definition": "The computer for which the term translation-lookaside buffer was coined.",
           "details": "The family first included virtual memory in 1972.",
           "tags": [ "Architecture", "Memory" ]
+          , "images": []
         },
         {
           "term": "PDP-11",
           "definition": "Replaced by the 32-bit VAX because of too little address space.",
           "details": "A 16-bit computer; architects identified the small address space as a difficult mistake.",
           "tags": [ "Architecture", "Commercial" ]
+          , "images": []
         },
         {
           "term": "Atlas",
@@ -338,6 +369,7 @@
           "definition": "The first RISC architecture to transition from 32-bit addressing to 64-bit addressing.",
           "details": "Provided a compatible extension of instruction sets to increase address space.",
           "tags": [ "Architecture", "Hardware" ]
+          , "images": []
         }
       ]
     },
@@ -349,18 +381,21 @@
           "answer": "True",
           "details": "Moving-head disks eventually became the dominant form of magnetized storage.",
           "tags": [ "History", "Storage" ]
+          , "images": []
         },
         {
           "question": "True/False: Intel developed removable hard disk drives.",
           "answer": "False",
           "details": "IBM developed removable hard disk drives in 1962, six years before Intel existed.",
           "tags": [ "History", "Commercial" ]
+          , "images": []
         },
         {
           "question": "True/False: The sealed Winchester disk replaced removable disks in the 1980s.",
           "answer": "True",
           "details": "As the cost of disk electronics decreased, the need to share electronics decreased.",
           "tags": [ "Storage" ]
+          , "images": []
         },
         {
           "question": "True/False: Flash memory was first used in cell phones and tablets.",
@@ -378,6 +413,8 @@
           "answer": "IDS",
           "details": "Short for Integrated Data Store.",
           "tags": [ "Software", "Data" ]
+          , "images": []
+
         },
         {
           "question": "A database system created to test the viability of relational databases.",
@@ -401,12 +438,14 @@
           "answer": "True",
           "details": "Parity schemes were implemented to make the 50-disk systems more reliable.",
           "tags": [ "Storage", "Performance" ]
+          , "images": []
         },
         {
           "question": "True/False: IBM filed a patent for RAID rotated parity schemes before researchers at Berkeley published on the concept.",
           "answer": "True",
           "details": "IBM filed the patent for RAID 5 first.",
           "tags": [ "History", "Legal" ]
+          , "images": []
         },
         {
           "question": "True/False: EMC sold DRAM boards to IBM throughout the 1980s and 1990s.",
@@ -419,12 +458,14 @@
           "answer": "False",
           "details": "Disk arrays were more expensive, so the I changed from 'inexpensive' to 'independent'.",
           "tags": [ "Storage", "Standards" ]
+          , "images": []
         },
         {
           "question": "True/False: Capabilities was a protection scheme used in the 1970s and 1980s that allowed a processor to share data while controlling access.",
           "answer": "True",
           "details": "Granted access to the object described by the capability.",
           "tags": [ "Security", "Architecture" ]
+          , "images": []
         }
       ]
     },
@@ -436,12 +477,15 @@
           "definition": "The first personal computer.",
           "details": "Directly inspired the Apple Macintosh.",
           "tags": [ "Hardware", "History" ]
+          , "images": []
         },
         {
           "term": "UNIX",
           "definition": "A timesharing system that incorporated good ideas from MULTICS.",
           "details": "Now an academic standard OS.",
           "tags": [ "Software", "OS" ]
+          , "images": []
+          , "images": []
         },
         {
           "term": "CTSS",
@@ -454,18 +498,21 @@
           "definition": "The operating system that Microsoft provided to IBM.",
           "details": "A revised version of QDOS; sold 500,000 copies in 1983.",
           "tags": [ "Software", "Commercial" ]
+          , "images": []
         },
         {
           "term": "BSD",
           "definition": "Berkeley Software Distribution",
           "details": "One of the first open source movements.",
           "tags": [ "Software", "OpenSource" ]
+          , "images": []
         },
         {
           "term": "Cal TSS",
           "definition": "Berkeley timesharing system that added paging virtual memory hardware to the SDS 920.",
           "details": "The SDS 930 became the first commercially available timesharing system with operational hardware/software.",
           "tags": [ "Architecture", "OS" ]
+          , "images": []
         }
       ]
     },
@@ -477,6 +524,8 @@
           "answer": "Architecture includes the key architectural elements:  ISA, Programmer-Visible Storage, Execution Behavior, and I/O Interface. Computer architectures are commonly classified into major families such as x86, ARM, MIPS, and RISC-V. Computer architecture is a abstraction, where Organization is the actual implementation. Organization includes key organizational elements such as hardware implementation details, control unit design, datapath organization, memory system implemenation,and clock distribution and timing. Different organizations can implement the same architecture with varying performance, cost, and power characteristics.",
           "details": "Architecture includes the ISA, data types, and addressing modes. Organization includes physical circuits, cache layout, and signals. Architecture answers 'what' it does; organization answers 'how'.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 2 — Stored Program Concept",
@@ -489,42 +538,50 @@
           "answer": "Defined by transistor technology, offering dramatic size reduction, power efficiency, and improved reliability. Magnetic core memory and the introduction of assembly language and high-level programming languages marked this era's advances.A Transistor is a semiconductor device that can amplify or switch electronic signals, serving as the fundamental building block of modern electronics. Transistors replaced vacuum tubes in Second Generation computers, offering smaller size, lower power consumption, and greater reliability.",
           "details": "Transistors were smaller, faster, cheaper, and produced less heat. Key examples include the IBM 1401 and IBM 7090.",
           "tags": [ "quiz-1", "History", "Hardware" ]
+          , "images": []
         },
         {
           "question": "Question 4 — RISC vs CISC (MIPS vs x86)",
             "answer": "MIPS (RISC) uses simple, fixed-length instructions, a load-store architecture, and 32 general-purpose registers for efficient pipelining. x86 (CISC) uses complex, variable-length instructions, supports memory-to-memory operations, and maintains backward compatibility with extensive instruction sets.",
           "details": "RISC (Reduced Instruction Set Computer) focuses on register-to-register operations. CISC (Complex Instruction Set Computer) allows direct memory operands. Modern x86 CPUs translate CISC into RISC-like micro-ops.",
           "tags": [ "quiz-1", "Architecture", "ISA" ]
+          , "images": []
         },
         {
           "question": "Question 5 — Moore’s Law",
           "answer": "Moore's Law is the observation that the number of transistors on an integrated circuit doubles approximately every two years, driving exponential growth in computing power. While not a physical law, this trend guided the semiconductor industry for over 50 years and shaped expectations for technological progress.",
           "details": "This exponential growth drove performance for decades but is currently slowing due to physical power/heat limits and quantum effects.",
           "tags": [ "quiz-1", "Trends", "Performance" ]
+          , "images": []
         },
         {
           "question": "Question 6 — Computer Level Hierarchy",
           "answer": "User: Human interaction level with complete abstraction from technical implementation → High-Level Language: Programming abstraction using human-readable syntax and automatic management → Assembly Language: Symbolic instruction representation with direct hardware correspondence → System Software: Resource management and hardware abstraction through operating systems → Machine: Instruction set architecture defining the hardware-software interface → Control: Hardware implementation managing instruction execution and processor coordination → Digital Logic: Electronic foundation using Boolean logic and circuit implementation.",
           "details": "Abstraction hides the complexity of lower levels from those above. Programmers typically interact with the ISA level, not the individual logic gates.",
           "tags": [ "quiz-1", "Architecture", "Software" ]
+          , "images": []
         },
         {
           "question": "Question 7 — Fifth Generation Computers",
           "answer": "Characterized by Artificial Intelligence (AI) integration and novel computing paradigms. Includes machine learning, quantum computing, neuromorphic computing, and specialized AI hardware, revolutionizing industries with human-like intelligence capabilities.",
           "details": "Characterized by massive parallelism and specialized hardware like TPUs (Tensor Processing Units).",
           "tags": [ "quiz-1", "History", "AI" ]
+          , "images": []
         },
         {
           "question": "Question 8 — Software Classes",
           "answer": "Different categories of computer programs. Application software are programs for end-users to accomplish specific tasks. Systems software are fundamental programs that manage hardware and provide platforms. Operating systems are teh primary interface between hardware and applications. Firmware is low-level software providing basic operational instructions.",
           "details": "Applications perform user tasks; System software (OS) manages hardware; Firmware provides low-level control for specific hardware (e.g., BIOS).",
           "tags": [ "quiz-1", "Software" ]
+          , "images": []
         },
         {
           "question": "Question 9 — PC vs Embedded Computers",
           "answer": "PCs are general-purpose and flexible; Embedded systems are dedicated to a specific, single function.",
           "details": "Embedded systems prioritize reliability, cost, and power efficiency (e.g., car ECU). PCs prioritize performance and user programmability.",
           "tags": [ "quiz-1", "Commercial", "Hardware" ]
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 10 — ENIAC to Smartphones",
@@ -537,18 +594,22 @@
           "answer": "Data and instructions represented using base-2 (0s and 1s).",
           "details": "Matches the two electrical states (on/off) of digital circuits.",
           "tags": [ "quiz-1", "Theory" ]
+          , "images": []
         },
         {
           "question": "Question 12 — Von Neumann Architecture",
           "answer": "Von Neumann Architecture is the computer design model where a single memory stores both instructions and data, with a CPU that processes them sequentially. This architecture, based on the Stored Program Concept, became the foundational blueprint for nearly all modern computers.",
           "details": "It implements the Stored Program Concept but is limited by the 'Von Neumann Bottleneck' where the CPU must wait for memory access over a shared bus.",
           "tags": [ "quiz-1", "Architecture" ]
+          , "images": []
         },
         {
           "question": "Question 13 — CPU",
           "answer": "The CPU (Central Processing Unit) is the primary component of a computer that executes instructions and performs calculations. Often called the \"brain\" of the computer, it contains the ALU, Control Unit, and registers that work together to process data.",
           "details": "Consists of the Arithmetic Logic Unit (ALU), Control Unit (CU), and Registers.",
           "tags": [ "quiz-1", "Hardware" ]
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 14 — ALU",
@@ -567,12 +628,16 @@
           "answer": "Registers are small, high-speed storage locations within the CPU that temporarily hold data and instructions during processing. They serve as the fastest accessible working space for the processor, enabling rapid data manipulation.",
           "details": "They hold immediate data and instructions being processed. They are the fastest level of the memory hierarchy.",
           "tags": [ "quiz-1", "Hardware", "Memory" ]
+          , "images": []
         },
         {
           "question": "Question 17 — Clock",
           "answer": "The Clock coordinates the timing of operations throughout a computer system, generating regular electrical pulses that synchronize all activities. Clock speed, measured in Hertz (Hz), determines how many operations a processor can perform per second.",
           "details": "The clock rate (GHz) determines how many cycles per second the CPU executes.",
           "tags": [ "quiz-1", "Hardware", "Performance" ]
+          , "images": []
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 18 — ISA",
@@ -591,12 +656,16 @@
           "answer": "Pipelining is a processor design technique that overlaps the execution of multiple instructions by dividing the instruction cycle into stages. Like an assembly line, pipelining allows different instructions to occupy different stages simultaneously, significantly improving throughput.",
           "details": "Increases instruction throughput by ensuring different parts of the CPU are working on different instructions at the same time.",
           "tags": [ "quiz-1", "Architecture", "Performance" ]
+          , "images": []
         },
         {
           "question": "Question 21 — Instructions",
           "answer": "Instructions are the basic commands that tell a computer processor what operations to perform. They serve as the fundamental interface between software logic and hardware execution, specifying operations like data movement, arithmetic, and control flow.",
           "details": "Consists of an opcode (operation) and operands (data or addresses).",
           "tags": [ "quiz-1", "Software", "ISA" ]
+          , "images": []
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 22 — Machine Language",
@@ -615,12 +684,15 @@
           "answer": "Memory refers to the computer components that store data and instructions for immediate access by the processor, enabling efficient program execution and data manipulation.",
           "details": "Categorized into Primary (volatile RAM) and Secondary (non-volatile storage).",
           "tags": [ "quiz-1", "Memory" ]
+          , "images": []
         },
         {
           "question": "Question 25 — Cache Memory",
           "answer": "Cache Memory is a small, extremely fast memory located close to or within the CPU that stores frequently accessed data and instructions. By reducing the time needed to access data from slower main memory, cache significantly improves processor performance.",
           "details": "Stores frequently accessed data to reduce the 'memory wall' latency.",
           "tags": [ "quiz-1", "Memory", "Hardware" ]
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 26 — RAM",
@@ -633,6 +705,8 @@
           "answer": "Secondary Storage refers to non-volatile storage devices such as hard disk drives (HDDs) and solid-state drives (SSDs) that retain data permanently. While slower than main memory, secondary storage provides large-capacity, persistent storage for programs and files.",
           "details": "Much larger capacity than RAM but significantly slower access speeds.",
           "tags": [ "quiz-1", "Storage" ]
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 28 — Bus System",
@@ -651,6 +725,9 @@
           "answer": "Microprocessors are complete CPUs implemented on single integrated circuit chips. They enabled mass production of computers, launched the fourth generation, and made personal computing economically viable.",
           "details": "Enabled the Fourth Generation of computing and the decentralization of computer power.",
           "tags": [ "quiz-1", "Hardware", "History" ]
+          , "images": []
+          , "images": []
+          , "images": []
         },
         {
           "question": "Question 31 — Integrated Circuit",

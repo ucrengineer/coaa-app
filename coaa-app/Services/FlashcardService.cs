@@ -17,5 +17,10 @@ namespace coaa_app.Services
         {
             return await _http.GetFromJsonAsync<FlashcardJson>("data/week-1/qa.json");
         }
+
+        public async Task<FlashcardJson> GetWeek2Async()
+        {
+            return await _http.GetFromJsonAsync<FlashcardJson>("data/week-2/qa.json");
+        }
     }
 }

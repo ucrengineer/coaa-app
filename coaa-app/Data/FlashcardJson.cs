@@ -21,5 +21,6 @@ namespace coaa_app.Data
         public string Definition { get; set; }
         public string Details { get; set; }
         public List<string> Tags { get; set; }
+        public List<string> Images { get; set; } = new List<string>();
     }
 }
