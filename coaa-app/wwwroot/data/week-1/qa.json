@@ -525,7 +525,6 @@
           "details": "Architecture includes the ISA, data types, and addressing modes. Organization includes physical circuits, cache layout, and signals. Architecture answers 'what' it does; organization answers 'how'.",
           "tags": [ "quiz-1", "Architecture", "Theory" ]
           , "images": []
-          , "images": []
         },
         {
           "question": "Question 2 — Stored Program Concept",
@@ -581,7 +580,6 @@
           "details": "Embedded systems prioritize reliability, cost, and power efficiency (e.g., car ECU). PCs prioritize performance and user programmability.",
           "tags": [ "quiz-1", "Commercial", "Hardware" ]
           , "images": []
-          , "images": []
         },
         {
           "question": "Question 10 — ENIAC to Smartphones",
@@ -609,7 +607,6 @@
           "details": "Consists of the Arithmetic Logic Unit (ALU), Control Unit (CU), and Registers.",
           "tags": [ "quiz-1", "Hardware" ]
           , "images": []
-          , "images": []
         },
         {
           "question": "Question 14 — ALU",
@@ -635,8 +632,6 @@
           "answer": "The Clock coordinates the timing of operations throughout a computer system, generating regular electrical pulses that synchronize all activities. Clock speed, measured in Hertz (Hz), determines how many operations a processor can perform per second.",
           "details": "The clock rate (GHz) determines how many cycles per second the CPU executes.",
           "tags": [ "quiz-1", "Hardware", "Performance" ]
-          , "images": []
-          , "images": []
           , "images": []
         },
         {
@@ -664,8 +659,6 @@
           "details": "Consists of an opcode (operation) and operands (data or addresses).",
           "tags": [ "quiz-1", "Software", "ISA" ]
           , "images": []
-          , "images": []
-          , "images": []
         },
         {
           "question": "Question 22 — Machine Language",
@@ -692,7 +685,6 @@
           "details": "Stores frequently accessed data to reduce the 'memory wall' latency.",
           "tags": [ "quiz-1", "Memory", "Hardware" ]
           , "images": []
-          , "images": []
         },
         {
           "question": "Question 26 — RAM",
@@ -705,7 +697,6 @@
           "answer": "Secondary Storage refers to non-volatile storage devices such as hard disk drives (HDDs) and solid-state drives (SSDs) that retain data permanently. While slower than main memory, secondary storage provides large-capacity, persistent storage for programs and files.",
           "details": "Much larger capacity than RAM but significantly slower access speeds.",
           "tags": [ "quiz-1", "Storage" ]
-          , "images": []
           , "images": []
         },
         {
@@ -725,8 +716,6 @@
           "answer": "Microprocessors are complete CPUs implemented on single integrated circuit chips. They enabled mass production of computers, launched the fourth generation, and made personal computing economically viable.",
           "details": "Enabled the Fourth Generation of computing and the decentralization of computer power.",
           "tags": [ "quiz-1", "Hardware", "History" ]
-          , "images": []
-          , "images": []
           , "images": []
         },
         {
